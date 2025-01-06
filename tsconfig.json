@@ -1,12 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "paths": {
-      "~/src/*": ["./src/*"]
-    }
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.astro"
-  ]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }

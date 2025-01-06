@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'P22-Stanyan';
+    src: url('fonts/P22Stanyan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'P22-Stanyan-Bold';
+    src: url('fonts/P22Stanyan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galindo';
+    src: url('fonts/Galindo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-primary: 'P22-Stanyan', Georgia, serif;
+    --font-secondary: 'Galindo', Arial, sans-serif;
+    --font-bold: 'P22-Stanyan-Bold', Georgia, serif;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+h1, h2, h3, .section-title {
+    font-family: var(--font-secondary);
+}
+
+.paper-torn {
+    font-family: var(--font-primary);
+}
+
+.sign-up-button {
+    font-family: var(--font-secondary);
+}
+
+.british-bus {
+    max-width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.phone-box {
+    max-width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.pigeon {
+    width: 30px; 
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
