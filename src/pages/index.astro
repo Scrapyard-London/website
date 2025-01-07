@@ -1,66 +1,75 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import londonBusV2 from "../assets/london-bus-v2.png";
+import phoneBooth from "../assets/phone-booth.png";
+import animeLogo from "../assets/animeLogo.png";
 ---
 
-<div class="grid-background"></div>
+<Layout>
+  <div class="grid-background"></div>
 
-<div class="content">
-	<div class="header-flag">HACK CLUB</div>
+  <div class="content">
+    <div class="header-flag">HACK CLUB</div>
 
-	<div class="tea-stain stain1"></div>
-	<div class="tea-stain stain2"></div>
+    <div class="tea-stain stain1"></div>
+    <div class="tea-stain stain2"></div>
 
-	<div class="stamp">FIRST CLASS<br />HACKING<br />LONDON SW1</div>
+    <div class="stamp">FIRST CLASS<br />HACKING<br />LONDON SW1</div>
 
-	<div class="rain" style="left: 20%"></div>
-	<div class="rain" style="left: 45%; animation-delay: 0.5s"></div>
-	<div class="rain" style="left: 70%; animation-delay: 0.8s"></div>
+    <div class="rain" style="left: 20%"></div>
+    <div class="rain" style="left: 45%; animation-delay: 0.5s"></div>
+    <div class="rain" style="left: 70%; animation-delay: 0.8s"></div>
 
-	<div class="floating-star star1"></div>
-	<div class="floating-star star2"></div>
-	<div class="floating-star star3"></div>
+    <div class="floating-star star1"></div>
+    <div class="floating-star star2"></div>
+    <div class="floating-star star3"></div>
 
-	<img src="animelogo.png" alt="Scrapyard London" class="main-logo" />
+    <Image
+      src={animeLogo}
+      loading="eager"
+      alt="Scrapyard London"
+      class="main-logo"
+    />
 
-	<div class="paper-torn">
-	<h1>BUILD STUPID S#!T, GET STUPID PRIZES.</h1>
-	<div class="event-details">
-		March 15-16 in London
-		<br />
-		Part of 100+ cities worldwide
-	</div>
-	<div class="scribble" style="top: 10px; right: 20px">
-		☔ British weather guaranteed!
-	</div>
-	</div>
+    <div class="paper-torn">
+      <h1>BUILD STUPID S#!T, GET STUPID PRIZES.</h1>
+      <div class="event-details">
+        March 15-16 in London
+        <br />
+        Part of 100+ cities worldwide
+      </div>
+      <div class="scribble" style="top: 10px; right: 20px">
+        ☔ British weather guaranteed!
+      </div>
+    </div>
 
-	<div class="paper-torn paper-yellow">
-	<h2>🇬🇧 Join us for a proper British hackathon!</h2>
-	<p>
-		Tea breaks included • Biscuits guaranteed • Cheeky coding sessions
-	</p>
-	<div class="british-slang" style="bottom: -20px; right: 30px">
-		Absolutely brilliant!
-	</div>
-	</div>
+    <div class="paper-torn paper-yellow">
+      <h2>🇬🇧 Join us for a proper British hackathon!</h2>
+      <p>Tea breaks included • Biscuits guaranteed • Cheeky coding sessions</p>
+      <div class="british-slang" style="bottom: -20px; right: 30px">
+        Absolutely brilliant!
+      </div>
+    </div>
 
-	<div class="paper-torn paper-blue">
-	<h3>🫖 What to expect:</h3>
-	<ul>
-		<li>Proper tea and coffee (no instant rubbish)</li>
-		<li>Orderly queuing for presentations</li>
-		<li>Polite debugging assistance</li>
-		<li>Apologizing for working code</li>
-	</ul>
-	</div>
+    <div class="paper-torn paper-blue">
+      <h3>🫖 What to expect:</h3>
+      <ul>
+        <li>Proper tea and coffee (no instant rubbish)</li>
+        <li>Orderly queuing for presentations</li>
+        <li>Polite debugging assistance</li>
+        <li>Apologizing for working code</li>
+      </ul>
+    </div>
 
-	<button class="sign-up-button">START AN EVENT IN LONDON →</button>
+    <button class="sign-up-button">START AN EVENT IN LONDON →</button>
 
-	<img src="London Bus V2.png" alt="London Bus" class="british-bus" />
-	<img src="Phone Booth.png" alt="Phone Box" class="phone-box" />
-	<img src="/api/placeholder/30/30" alt="Pigeon" class="pigeon" />
+    <Image src={londonBusV2} alt="London Bus" class="british-bus" />
+    <Image src={phoneBooth} alt="Phone Box" class="phone-box" />
+    <!-- <Image src="/api/placeholder/30/30" alt="Pigeon" class="pigeon" /> -->
 
-	<div class="queue-line"></div>
-	<div class="queue-text">Orderly queue forms here →</div>
-</div>
-
+    <div class="queue-line"></div>
+    <div class="queue-text">Orderly queue forms here →</div>
+  </div>
+</Layout>
