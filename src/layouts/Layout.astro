@@ -1,33 +1,37 @@
-<html lang="en"></html>
+---
+import "../styles/styles.css";
+---
+
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scrapyard London</title>
-    <link rel="stylesheet" href="styles.css" />
     <style>
       @font-face {
-        font-family: 'LondonFont';
-        src: url('./fonts/london.ttf') format('truetype');
+        font-family: "LondonFont";
+        src: url("./fonts/london.ttf") format("truetype");
       }
 
       @font-face {
-        font-family: 'Galindo';
-        src: url('./fonts/Galindo-Regular.ttf') format('truetype');
+        font-family: "Galindo";
+        src: url("./fonts/Galindo-Regular.ttf") format("truetype");
       }
 
       @font-face {
-        font-family: 'Moonblossom';
-        src: url('./fonts/MOONBLOSSOM.ttf') format('truetype');
+        font-family: "Moonblossom";
+        src: url("./fonts/MOONBLOSSOM.ttf") format("truetype");
       }
 
       @font-face {
-        font-family: 'P22-Stanyan';
-        src: url('./fonts/P22-Stanyan-Reg.ttf') format('truetype');
+        font-family: "P22-Stanyan";
+        src: url("./fonts/P22-Stanyan-Reg.ttf") format("truetype");
       }
 
       @font-face {
-        font-family: 'P22-Stanyan-Bold';
-        src: url('./fonts/P22-stanyan-bold.ttf') format('truetype');
+        font-family: "P22-Stanyan-Bold";
+        src: url("./fonts/P22-stanyan-bold.ttf") format("truetype");
       }
 
       * {
@@ -82,12 +86,12 @@
           5% 98%,
           0% 95%
         );
-        font-family: 'P22-Stanyan', serif;
+        font-family: "P22-Stanyan", serif;
         line-height: 1.6;
       }
 
       .paper-torn h1 {
-        font-family: 'Moonblossom', cursive;
+        font-family: "Moonblossom", cursive;
         font-size: 3rem;
         text-align: center;
         color: #337d78;
@@ -259,8 +263,13 @@
       }
 
       @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
       }
 
       @keyframes flyPigeon {
@@ -371,32 +380,31 @@
       }
 
       .header-title {
-        font-family: 'Galindo', cursive;
+        font-family: "Galindo", cursive;
         font-size: 3.5rem;
         color: #2a2a2a;
       }
 
       .subtitle {
-        font-family: 'Moonblossom', cursive;
+        font-family: "Moonblossom", cursive;
         font-size: 2rem;
         color: #f1a3ba;
       }
 
       .main-content {
-        font-family: 'P22-Stanyan', serif;
+        font-family: "P22-Stanyan", serif;
         font-size: 1.2rem;
         line-height: 1.6;
       }
 
       .highlight-text {
-        font-family: 'P22-Stanyan-Bold', serif;
+        font-family: "P22-Stanyan-Bold", serif;
         font-size: 1.4rem;
         color: #337d78;
       }
     </style>
   </head>
   <body>
-
-		<slot />
+    <slot />
   </body>
 </html>
