@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import londonBusV2 from "../assets/london-bus-v2.png";
+import phoneBooth from "../assets/phone-booth.png";
+import animeLogo from "../assets/animeLogo.png";
 ---
 
 <Layout>
@@ -21,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="floating-star star2"></div>
     <div class="floating-star star3"></div>
 
-    <img src="animelogo.png" alt="Scrapyard London" class="main-logo" />
+    <Image src={animeLogo} alt="Scrapyard London" class="main-logo" />
 
     <div class="paper-torn">
       <h1>BUILD STUPID S#!T, GET STUPID PRIZES.</h1>
@@ -55,9 +60,9 @@ import Layout from "../layouts/Layout.astro";
 
     <button class="sign-up-button">START AN EVENT IN LONDON →</button>
 
-    <img src="London Bus V2.png" alt="London Bus" class="british-bus" />
-    <img src="Phone Booth.png" alt="Phone Box" class="phone-box" />
-    <img src="/api/placeholder/30/30" alt="Pigeon" class="pigeon" />
+    <Image src={londonBusV2} alt="London Bus" class="british-bus" />
+    <Image src={phoneBooth} alt="Phone Box" class="phone-box" />
+    <!-- <Image src="/api/placeholder/30/30" alt="Pigeon" class="pigeon" /> -->
 
     <div class="queue-line"></div>
     <div class="queue-text">Orderly queue forms here →</div>
