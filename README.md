@@ -1,5 +1,5 @@
-# Scrapyard London
+# Website!
 
-feat: make a readme
+Want to make a change? PR it!
 
-oh wait. we need a website for that first
+Got questions? hello@scrapyard.london :P
